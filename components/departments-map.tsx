@@ -26,14 +26,14 @@ export function DepartmentsMap() {
 
           <div className="flex flex-col items-center">
             <img
-              src="/images/image.png"
-              alt="Map of India highlighting operational states: Odisha, Bihar, Jharkhand, Uttar Pradesh, and West Bengal"
+              src="/images/image1.png"
+              alt="Map of India highlighting operational states: Odisha, Bihar, Jharkhand, Uttar Pradesh,Madhya Pradesh, Chhattisgarh, Maharashtra and West Bengal"
               className="w-[400px] h-auto object-contain"
             />
             <p className="text-sm text-muted-foreground mt-4 text-center max-w-md">
               Our operations span across{" "}
               <span className="font-semibold text-[#c41e3a]">
-                Odisha, Bihar, Jharkhand, Uttar Pradesh, and West Bengal
+                Odisha, Bihar, Jharkhand, Uttar Pradesh, Madhya Pradesh, Chhattisgarh, Maharashtra and West Bengal
               </span>
             </p>
           </div>
@@ -50,14 +50,14 @@ export function DepartmentsMap() {
         <div className="lg:hidden">
           <div className="max-w-xs mx-auto mb-8">
             <img
-              src="/images/image.png"
-              alt="Map of India highlighting operational states: Odisha, Bihar, Jharkhand, Uttar Pradesh, and West Bengal"
+              src="/images/image1.png"
+              alt="Map of India highlighting operational states: Odisha, Bihar, Jharkhand, Uttar Pradesh,Madhya Pradesh, Chhattisgarh, Maharashtra and West Bengal"
               className="w-full h-auto object-contain"
             />
             <p className="text-sm text-muted-foreground mt-4 text-center">
               Our operations span across{" "}
               <span className="font-semibold text-[#c41e3a]">
-                Odisha, Bihar, Jharkhand, Uttar Pradesh, and West Bengal
+                Odisha, Bihar, Jharkhand, Uttar Pradesh,Madhya Pradesh, Chhattisgarh, Maharashtra and West Bengal
               </span>
             </p>
           </div>
