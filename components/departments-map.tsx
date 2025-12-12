@@ -1,27 +1,37 @@
 const departments = [
-  "Central Public Works Department (CPWD)",
-  "Indian Railways",
-  "Rail Vikas Nigam Limited (RVNL)",
-  "IRCON International Limited (IRCON)",
-  "National Thermal Power Corporation (NTPC)",
-  "Airports Authority of India (AAI)",
-  "Indian Oil Corporation Limited (IOCL)",
-  "National Hydroelectric Power Corporation (NHPC)",
+  "CENTRAL PUBLIC WORKS DEPARTMENT",
+  "NATIONAL HIGHWAY AUTHORITY OF INDIA",
+  "INDIAN RAILWAYS",
+  "RAIL VIKAS NIGAM LIMITED",
+  "IRCON INTERNATIONAL LIMITED",
+  "NATIONAL THERMAL POWER CORPORATION",
+  "AIRPORTS AUTHORITY OF INDIA",
+  "INDIAN OIL CORPORATION LIMITED",
+  "NATIONAL MINERAL DEVELOPMENT CORPORATION",
+  "NATIONAL HYDROELECTRIC POWER CORPORATION",
+  "DELHI METRO RAIL CORPORATION",
+  "CHENNAI METRO RAIL CORPORATION",
 ]
 
 export function DepartmentsMap() {
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#c41e3a]">SERVICEABLE DEPARTMENTS</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-[#c41e3a]">SERVICEABLE DEPARTMENTS</h2>
+        
+        <p className="text-center text-lg text-muted-foreground max-w-4xl mx-auto mb-12 leading-relaxed">
+          MTCS plays a crucial role in assisting companies and brands with government approvals by managing the complete liaisoning process required for enlistment in approved vendor lists. We handle all documentation, submissions, and compliance formalities, ensuring a smooth and efficient approval journey. By taking ownership of the tedious procedural workload, we enable businesses to focus on their core operations while we secure the necessary government clearances—making MTCS a trusted partner for streamlined vendor registration and regulatory coordination.
+        </p>
 
         <div className="hidden lg:flex justify-center items-center gap-8 max-w-7xl mx-auto">
-          {/* Left column - 4 departments */}
+          {/* Left column - 6 departments */}
           <div className="flex flex-col gap-6 justify-center">
             <DepartmentBadge name={departments[0]} />
             <DepartmentBadge name={departments[1]} />
             <DepartmentBadge name={departments[2]} />
             <DepartmentBadge name={departments[3]} />
+            <DepartmentBadge name={departments[4]} />
+            <DepartmentBadge name={departments[5]} />
           </div>
 
           <div className="flex flex-col items-center">
@@ -38,12 +48,14 @@ export function DepartmentsMap() {
             </p>
           </div>
 
-          {/* Right column - 4 departments */}
+          {/* Right column - 6 departments */}
           <div className="flex flex-col gap-6 justify-center">
-            <DepartmentBadge name={departments[4]} />
-            <DepartmentBadge name={departments[5]} />
             <DepartmentBadge name={departments[6]} />
             <DepartmentBadge name={departments[7]} />
+            <DepartmentBadge name={departments[8]} />
+            <DepartmentBadge name={departments[9]} />
+            <DepartmentBadge name={departments[10]} />
+            <DepartmentBadge name={departments[11]} />
           </div>
         </div>
 

@@ -1,9 +1,11 @@
 import { Header } from "@/components/header"
 import { HeroVideoSection } from "@/components/hero-video-section"
 import { AboutSection } from "@/components/about-section"
+import { IndustriesSection } from "@/components/industries-section"
 import { BrandsSlider } from "@/components/brands-slider"
 import { DepartmentsMap } from "@/components/departments-map"
 import { ClientsSlider } from "@/components/clients-slider"
+import { OfferingsSection } from "@/components/offerings-section"
 import { ContactSection } from "@/components/contact-section"
 
 export default function Home() {
@@ -13,8 +15,10 @@ export default function Home() {
       <HeroVideoSection />
       <BrandsSlider />
       <AboutSection />
+      <IndustriesSection />
       <ClientsSlider />
       <DepartmentsMap />
+      <OfferingsSection />
       <ContactSection />
     </main>
   )

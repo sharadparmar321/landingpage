@@ -65,14 +65,18 @@ export function ClientsSlider() {
   return (
     <section className="py-16 bg-muted/30 overflow-hidden">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#c41e3a]">OUR KEY CLIENTS</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-[#c41e3a]">OUR KEY CLIENTS</h2>
+        
+        <p className="text-center text-lg text-muted-foreground max-w-4xl mx-auto mb-12 leading-relaxed">
+          Since our inception, we have been committed to delivering exceptional service in the procurement of cement and admixtures, fostering long-term relationships with our valued clients. As every procurement division must evaluate multiple factors, we take the onus upon ourselves to secure the best possible rates for all their cement and admixture requirements, while ensuring timely supply through continuous coordination and follow-ups. We also manage quality-related concerns end to end, giving companies complete peace of mind—this is why our clients continue to trust and work with us. Here are a few of our prominent clients:
+        </p>
 
         <div ref={scrollRef} className="flex gap-6 overflow-hidden whitespace-nowrap">
           {/* Duplicate clients for seamless loop */}
           {[...clients, ...clients].map((client, index) => (
             <div
               key={index}
-              className="flex-shrink-0 bg-background border border-border rounded-lg px-6 py-4 shadow-md hover:shadow-lg transition-shadow"
+              className="shrink-0 bg-background border border-border rounded-lg px-6 py-4 shadow-md hover:shadow-lg transition-shadow"
             >
               <span className="text-foreground font-medium">{client}</span>
             </div>
