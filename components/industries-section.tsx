@@ -49,7 +49,7 @@ export function IndustriesSection() {
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="group h-72 [perspective:1000px]"
+              className="group h-80 md:h-72 [perspective:1000px]"
             >
               <div className="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 {/* Front Side */}

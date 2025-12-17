@@ -5,6 +5,7 @@ import { IndustriesSection } from "@/components/industries-section"
 import { BrandsSlider } from "@/components/brands-slider"
 import { DepartmentsMap } from "@/components/departments-map"
 import { ClientsSlider } from "@/components/clients-slider"
+import { OurPresence } from "@/components/our-presence"
 import { OfferingsSection } from "@/components/offerings-section"
 import { ContactSection } from "@/components/contact-section"
 
@@ -18,6 +19,7 @@ export default function Home() {
       <IndustriesSection />
       <ClientsSlider />
       <DepartmentsMap />
+      <OurPresence />
       <OfferingsSection />
       <ContactSection />
     </main>
