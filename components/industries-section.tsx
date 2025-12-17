@@ -45,7 +45,7 @@ export function IndustriesSection() {
           Backed by a strong nationwide presence, we provide every critical construction input needed for continuous operations. These four core customer verticals rely on us for consistent quality and dependable supply.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 max-w-5xl mx-auto">
           {industries.map((industry, index) => (
             <div
               key={index}
