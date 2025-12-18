@@ -31,19 +31,16 @@ export function IndustriesSection() {
   ]
 
   return (
-    <section className="py-16 bg-muted/30 relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-[#c41e3a]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#c41e3a]/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
-      
-      <div className="container mx-auto px-4 max-w-6xl relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-[#c41e3a]">
-          INDUSTRIES WE SERVE
-        </h2>
-        
-        <p className="text-center text-lg text-muted-foreground max-w-4xl mx-auto mb-12">
-          Backed by a strong nationwide presence, we provide every critical construction input needed for continuous operations. These four core customer verticals rely on us for consistent quality and dependable supply.
-        </p>
+    <section className="py-20 bg-white">
+      <div className="container mx-auto px-4 max-w-7xl">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <p className="text-[#c41e3a] uppercase tracking-wider text-sm font-semibold mb-3">OUR EXPERTISE</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Industries We Serve</h2>
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+            Backed by a strong nationwide presence, we provide every critical construction input needed for continuous operations. These four core customer verticals rely on us for consistent quality and dependable supply.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 max-w-5xl mx-auto">
           {industries.map((industry, index) => (
@@ -53,13 +50,13 @@ export function IndustriesSection() {
             >
               <div className="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 {/* Front Side */}
-                <div className="absolute inset-0 h-full w-full rounded-2xl bg-gray-100 border-2 border-gray-200 [backface-visibility:hidden] shadow-xl">
+                <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-white to-gray-50 border border-gray-200 [backface-visibility:hidden] shadow-lg hover:shadow-2xl transition-shadow">
                   <div className="flex flex-col items-center justify-center h-full p-8 relative overflow-hidden">
-                    {/* Gradient overlay */}
-                    <div className="absolute inset-0 bg-gray-50 opacity-50"></div>
+                    {/* Decorative corner */}
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[#c41e3a]/10 to-transparent rounded-bl-full" />
                     
                     {/* Image */}
-                    <div className="relative w-24 h-24 mb-4 transform group-hover:scale-110 transition-transform duration-300 z-10">
+                    <div className="relative w-24 h-24 mb-6 transform group-hover:scale-110 transition-transform duration-300 z-10">
                       <Image
                         src={industry.image}
                         alt={industry.title}
@@ -69,34 +66,37 @@ export function IndustriesSection() {
                     </div>
                     
                     {/* Title */}
-                    <h3 className="text-2xl font-bold text-gray-800 text-center relative z-10">
+                    <h3 className="text-2xl font-bold text-gray-900 text-center relative z-10 mb-3">
                       {industry.title}
                     </h3>
                     
                     {/* Hover indicator */}
-                    <div className="absolute bottom-4 text-sm text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity">
-                      Hover to learn more →
+                    <div className="text-sm text-[#c41e3a] font-medium flex items-center gap-2 opacity-70 group-hover:opacity-100 transition-opacity">
+                      Learn more 
+                      <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
                     </div>
                   </div>
                 </div>
                 
                 {/* Back Side */}
-                <div className={`absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br ${industry.gradient} [backface-visibility:hidden] [transform:rotateY(180deg)] p-6 overflow-y-auto shadow-xl`}>
+                <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 [backface-visibility:hidden] [transform:rotateY(180deg)] p-6 overflow-y-auto shadow-2xl border border-gray-700">
                   <div className="h-full flex flex-col">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="relative w-12 h-12 shrink-0">
+                      <div className="relative w-12 h-12 shrink-0 bg-white/10 rounded-lg p-2">
                         <Image
                           src={industry.image}
                           alt={industry.title}
                           fill
-                          className="object-contain brightness-0 invert"
+                          className="object-contain brightness-0 invert p-2"
                         />
                       </div>
-                      <h3 className="text-xl font-bold text-gray-100">
+                      <h3 className="text-xl font-bold text-white">
                         {industry.title}
                       </h3>
                     </div>
-                    <p className="text-gray-200 text-sm leading-relaxed flex-1">
+                    <p className="text-gray-300 text-sm leading-relaxed flex-1">
                       {industry.description}
                     </p>
                   </div>
