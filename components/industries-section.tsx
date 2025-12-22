@@ -31,11 +31,11 @@ export function IndustriesSection() {
   ]
 
   return (
-    <section className="py-20 bg-white">
+    <section id="our-expertise" className="py-20 bg-white scroll-mt-20">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-[#c41e3a] uppercase tracking-wider text-sm font-semibold mb-3">OUR EXPERTISE</p>
+          <p className="text-[#c41e3a] uppercase tracking-widest text-xl md:text-2xl lg:text-3xl font-bold mb-3 inline-block px-3 py-1 bg-[#fff6f7] rounded-full">OUR EXPERTISE</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Industries We Serve</h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
             Backed by a strong nationwide presence, we provide every critical construction input needed for continuous operations. These four core customer verticals rely on us for consistent quality and dependable supply.
@@ -83,19 +83,9 @@ export function IndustriesSection() {
                 {/* Back Side */}
                 <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 [backface-visibility:hidden] [transform:rotateY(180deg)] p-6 overflow-y-auto shadow-2xl border border-gray-700">
                   <div className="h-full flex flex-col">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="relative w-12 h-12 shrink-0 bg-white/10 rounded-lg p-2">
-                        <Image
-                          src={industry.image}
-                          alt={industry.title}
-                          fill
-                          className="object-contain brightness-0 invert p-2"
-                        />
-                      </div>
-                      <h3 className="text-xl font-bold text-white">
-                        {industry.title}
-                      </h3>
-                    </div>
+                    <h3 className="text-xl font-bold text-white mb-4">
+                      {industry.title}
+                    </h3>
                     <p className="text-gray-300 text-sm leading-relaxed flex-1">
                       {industry.description}
                     </p>

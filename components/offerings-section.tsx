@@ -5,6 +5,19 @@ import { Package, Mountain, Building2 } from "lucide-react"
 export function OfferingsSection() {
   const offerings = [
     {
+      icon: Building2,
+      title: "Cement & Concrete Inputs",
+      description:
+        "High-grade cement products and concrete additives from top brands. Ensuring structural integrity and longevity for all your construction projects.",
+      items: [
+        "OPC / PPC / PSC Cement",
+        "GGBS & GGBFS",
+        "Fly Ash (Dry & Wet)",
+        "Admixture",
+        "Construction Chemicals",
+      ],
+    },
+    {
       icon: Package,
       title: "Industrial Products",
       description:
@@ -29,28 +42,15 @@ export function OfferingsSection() {
         "Dolomite",
         "Mining Materials",
       ],
-    },
-    {
-      icon: Building2,
-      title: "Cement & Concrete Inputs",
-      description:
-        "High-grade cement products and concrete additives from top brands. Ensuring structural integrity and longevity for all your construction projects.",
-      items: [
-        "OPC / PPC / PSC Cement",
-        "GGBS & GGBFS",
-        "Fly Ash (Dry & Wet)",
-        "Admixture",
-        "Construction Chemicals",
-      ],
-    },
+    }
   ]
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="what-we-offer" className="py-20 bg-gray-50 scroll-mt-20">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-[#c41e3a] uppercase tracking-wider text-sm font-semibold mb-3">WHAT WE OFFER</p>
+          <p className="text-[#c41e3a] uppercase tracking-widest text-xl md:text-2xl lg:text-3xl font-bold mb-3 inline-block px-3 py-1 bg-[#fff6f7] rounded-full">WHAT WE OFFER</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Product Categories</h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
             MTCS is the preferred partner for material supply because we source directly from certified manufacturers,

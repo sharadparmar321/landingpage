@@ -4,11 +4,15 @@ import { Target, Users, Shield, Award, Briefcase, TrendingUp } from "lucide-reac
 
 export function AboutSection() {
   return (
-    <section className="py-20 bg-white">
+    <section id="who-we-are" className="py-20 bg-white scroll-mt-20">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-[#c41e3a] uppercase tracking-wider text-sm font-semibold mb-3">WHO WE ARE</p>
+          <p className="text-[#c41e3a] uppercase tracking-widest 
+text-xl md:text-2xl lg:text-3xl 
+font-bold mb-3 inline-block px-3 py-1 bg-[#fff6f7] rounded-full">
+  WHO WE ARE
+</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">About MAA TARINI</h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
             Your trusted partner in delivering quality materials and services since 2015
