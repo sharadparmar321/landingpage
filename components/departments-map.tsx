@@ -23,7 +23,7 @@ export function DepartmentsMap() {
           MTCS plays a crucial role in assisting companies and brands with government approvals by managing the complete liaisoning process required for enlistment in approved vendor lists. We handle all documentation, submissions, and compliance formalities, ensuring a smooth and efficient approval journey. By taking ownership of the tedious procedural workload, we enable businesses to focus on their core operations while we secure the necessary government clearances—making MTCS a trusted partner for streamlined vendor registration and regulatory coordination.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {departments.map((dept, index) => (
             <DepartmentBadge key={index} name={dept} />
           ))}
@@ -35,7 +35,7 @@ export function DepartmentsMap() {
 
 function DepartmentBadge({ name }: { name: string }) {
   return (
-    <div className="bg-[#c41e3a] text-white rounded-full px-5 py-3 text-center text-sm font-medium shadow-lg hover:shadow-xl transition-shadow hover:bg-[#a01830] cursor-default min-w-[220px]">
+    <div className="bg-[#c41e3a] text-white rounded-full px-6 py-4 text-center text-sm font-semibold shadow-lg hover:shadow-xl transition-all hover:bg-[#a01830] cursor-default h-[72px] flex items-center justify-center leading-tight">
       {name}
     </div>
   )
